@@ -1,0 +1,6 @@
+*.env
+**del
+
+node_modules
+**/tmp/**
+**/*.log

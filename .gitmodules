@@ -1,0 +1,3 @@
+[submodule "briefing-src"]
+	path = briefing-src
+	url = https://github.com/holtwick/briefing.git
