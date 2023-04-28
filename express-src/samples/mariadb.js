@@ -4,16 +4,16 @@
  Based on the examples found here: https://github.com/mysqljs/mysql
 */
 
-var mysql = require('mysql')
-  , assert = require('assert');;
+var mysql = require('mysql'),
+  assert = require('assert');
 
 // Connection URL configured in your docker-compose.yml file
 var url = process.env.DATABASE_URL;
 
 var connection = mysql.createConnection(url);
-connection.connect(function(err) {
+connection.connect(function (err) {
   assert.equal(null, err);
-  console.log("Connected correctly to MySQL server");
+  console.log('Connected correctly to MySQL server');
   connection.query('SHOW TABLES;');
   connection.end();
 });
